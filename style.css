@@ -5,12 +5,43 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  background-color: steelblue;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   overflow: hidden;
   margin: 0;
+}
+
+.empty {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border: solid 3px #000;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.fill {
+  background-image: url('https://plus.unsplash.com/premium_photo-1661883809211-eb59f508b3d9?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2F0ZXJmYWxsfGVufDB8fDB8fHww');
+  height: 145px;
+  width: 145px;
+  cursor: pointer;
+}
+
+.hold {
+  border: solid 5px #ccc;
+}
+
+.hovered {
+  background-color: #333;
+  border-color: #fff;
+  border-style: dashed;
+}
+
+@media(max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
 }
